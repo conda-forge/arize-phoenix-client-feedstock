@@ -23,6 +23,10 @@ requirements:
     - python >={{ python_min }}
     - httpx
     - typing_extensions
+    - tqdm
+    - openinference-semantic-conventions
+    - opentelemetry-sdk
+    - opentelemetry-exporter-otlp
 
 test:
   imports:
