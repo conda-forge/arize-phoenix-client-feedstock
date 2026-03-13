@@ -1,5 +1,5 @@
 {% set name = "arize-phoenix-client" %}
-{% set version = "1.12.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arize_phoenix_client-{{ version }}.tar.gz
-  sha256: 41048e8451a69c4b02386ccce908570519dcec375dc55f3348c2bb666b783cd0
+  sha256: f5028cfafa2145547bf3b88a08d676ef5475740d1ea01e55a2177e4b64b47429
 
 build:
   noarch: python
@@ -23,6 +23,10 @@ requirements:
     - python >={{ python_min }}
     - httpx
     - typing_extensions
+    - tqdm
+    - openinference-semantic-conventions
+    - opentelemetry-sdk
+    - opentelemetry-exporter-otlp
 
 test:
   imports:
