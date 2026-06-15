@@ -25,6 +25,7 @@ requirements:
     - typing_extensions
     - tqdm
     - openinference-semantic-conventions
+    - openinference-instrumentation
     - opentelemetry-sdk
     - opentelemetry-exporter-otlp
 
