@@ -1,5 +1,5 @@
 {% set name = "arize-phoenix-client" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/arize_phoenix_client-{{ version }}.tar.gz
-  sha256: 6f9013457f6f56d56db65f61877369eae7bd23460212030b54da68cb0a4d8047
+  sha256: 096733f0b95ac3456e1bd99ae639c2ae3b0b395ac1c651eefd050fd1ecb9c215
 
 build:
   noarch: python
